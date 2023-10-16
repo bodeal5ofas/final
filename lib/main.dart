@@ -13,8 +13,8 @@ class FinalApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
-      routes: {HomePage.id: (context) => HomePage()},
-      initialRoute: HomePage.id,
+      routes: {NotesView.id: (context) => NotesView()},
+      initialRoute: NotesView.id,
     );
   }
 }
