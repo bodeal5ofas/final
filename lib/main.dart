@@ -2,7 +2,7 @@ import 'package:final_project/screens/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(FinalApp());
+  runApp(const FinalApp());
 }
 
 class FinalApp extends StatelessWidget {
@@ -13,7 +13,7 @@ class FinalApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(brightness: Brightness.dark, fontFamily: 'Poppins'),
       debugShowCheckedModeBanner: false,
-      routes: {NotesView.id: (context) => NotesView()},
+      routes: {NotesView.id: (context) => const NotesView()},
       initialRoute: NotesView.id,
     );
   }
