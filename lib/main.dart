@@ -1,7 +1,11 @@
+import 'package:final_project/constant.dart';
 import 'package:final_project/screens/home_page.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/adapters.dart';
 
-void main() {
+void main() async {
+  await Hive.initFlutter();
+  await Hive.openBox(kNoteBox);
   runApp(const FinalApp());
 }
 
